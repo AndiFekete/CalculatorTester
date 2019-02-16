@@ -118,9 +118,6 @@ namespace CalculatorTester
                     case Browser.Chrome:
                         driver = new ChromeDriver();
                         break;
-                    case Browser.IE:
-                        driver = new InternetExplorerDriver();
-                        break;
                     default:
                         driver = new FirefoxDriver();
                         break;
@@ -151,14 +148,6 @@ namespace CalculatorTester
                             coptions.AddAdditionalCapability(key, settings[key], true);
                         }
                         driverOptions = coptions;
-                        break;
-                    case Browser.IE:
-                        InternetExplorerOptions ioptions = new InternetExplorerOptions();
-                        foreach (String key in settings)
-                        {
-                            ioptions.AddAdditionalCapability(key, settings[key], true);
-                        }
-                        driverOptions = ioptions;
                         break;
                     default:
                         FirefoxOptions options = new FirefoxOptions();

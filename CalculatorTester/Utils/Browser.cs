@@ -10,7 +10,6 @@ namespace CalculatorTester.Utils
     public enum Browser
     {
         Firefox,
-        Chrome,
-        IE
+        Chrome
     }
 }
