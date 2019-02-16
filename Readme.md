@@ -28,7 +28,7 @@ The configuration file is constructed as follows:
   </appSettings>
   
   <remoteTestingOptions>
-    <!-- add name="" value"" -->
+    <!-- add name="" value="" -->
     <!-- Remote testing options go here -->
     <!-- these will be added to the appropriate DriverOptions object when initializing the test -->
   </remoteTestingOptions>
