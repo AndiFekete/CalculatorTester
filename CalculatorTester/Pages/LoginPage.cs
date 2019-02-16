@@ -21,9 +21,9 @@ namespace CalculatorTester.Pages
 
         public void LoginToPage(string userame, string password)
         {
-            setUserName(userame);
-            setPassword(password);
-            clickSubmit();           
+            SetUserName(userame);
+            SetPassword(password);
+            ClickSubmit();           
         }
 
         public void WaitForLoginPage()
@@ -31,17 +31,17 @@ namespace CalculatorTester.Pages
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(loginFormPath)));
         }
 
-        private void setUserName(string userame)
+        private void SetUserName(string userame)
         {
             UserField.SendKeys(userame);
         }
 
-        private void setPassword(string password)
+        private void SetPassword(string password)
         {
             PasswordField.SendKeys(password);
         }
 
-        private void clickSubmit()
+        private void ClickSubmit()
         {
             SubmitButton.Click();
         }
