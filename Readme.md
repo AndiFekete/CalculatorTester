@@ -1,7 +1,7 @@
 # Calculator tester solution
 Calculator tester application using Selenium and NUnit
 ## How to use
-* Clone the repository on a machine that has Visual Studio and a browser (IE, Chrome or Firefox) installed
+* Clone the repository on a machine that has Visual Studio and a browser (Chrome or Firefox) installed
 * Make sure that Visual Studio has the NUnit 3 test adapter extension installed
 * Open the solution in Visual Studio and build
 * The tests will appear in the Test explorer view
@@ -19,7 +19,7 @@ The configuration file is constructed as follows:
   </configSections>
   
   <appSettings>
-    <add key="PreferedBrowser" value="[BROWSER TYPE]"/> <!-- IE, Firefox or Chrome -->
+    <add key="PreferedBrowser" value="[BROWSER TYPE]"/> <!-- Firefox or Chrome -->
     
     <add key="IsRemote" value="[TESTING ON A REMOTE BROWSER]"/>  <!--true or false-->
     
