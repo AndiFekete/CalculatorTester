@@ -19,19 +19,18 @@ The configuration file is constructed as follows:
   </configSections>
   
   <appSettings>
-    <!--add key="PreferedBrowser" value="Firefox"/-->
-    <!--add key="PreferedBrowser" value="IE"/-->
-    <add key="PreferedBrowser" value="Chrome"/>
+    <add key="PreferedBrowser" value="[BROWSER TYPE]"/> <!-- IE, Firefox or Chrome -->
     
-    <add key="IsRemote" value="false"/>  <!--true or false-->
+    <add key="IsRemote" value="[TESTING ON A REMOTE BROWSER]"/>  <!--true or false-->
     
-    <add key="Server" value="http://hub.browserstack.com/wd/hub"/>  <!--Uri if remote testing is selected-->
+    <add key="Server" value="[SERVER URI]"/>  <!--Uri if remote testing is selected-->
     
   </appSettings>
   
   <remoteTestingOptions>
-    <add key="browserstack.user" value="andreafekete1"/>
-    <add key="browserstack.key" value="AGbztAwWyG1fdKEizXgy"/>
+    <!-- add name="" value"" -->
+    <!-- Remote testing options go here -->
+    <!-- these will be added to the appropriate DriverOptions object when initializing the test -->
   </remoteTestingOptions>
 </configuration>
 ```
