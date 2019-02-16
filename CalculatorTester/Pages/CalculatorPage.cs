@@ -64,7 +64,7 @@ namespace CalculatorTester.Pages
 
         public void ClickButton(int button)
         {
-            if (button <= 0 || button >= 9) throw new ArgumentOutOfRangeException("Button value must be between 0 and 9");
+            if (button < 0 || button > 9) throw new ArgumentOutOfRangeException("Button value must be between 0 and 9");
 
             var path = buttonsPath + "/button[text()='" + button + "']";
             var element = driver.FindElement(By.XPath(path));
