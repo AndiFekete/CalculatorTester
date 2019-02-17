@@ -34,3 +34,5 @@ The configuration file is constructed as follows:
   </remoteTestingOptions>
 </configuration>
 ```
+## Known issues
+* Testing on a remote Firefox browser results in the test failing with the following exception: "InvalidArgumentError: Could not convert 'text' to string". This occures because of a known bug in the `sendKeys` method. The issue has been reported at https://github.com/SeleniumHQ/selenium/issues/4041 and has been allegedly resolved, but I didn't manage to get it to work even with the most recent Selenium package.
